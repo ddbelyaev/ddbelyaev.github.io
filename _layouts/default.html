@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+  <div class="row">
+    <div class="large-12 large-centered columns">
+
+      <header class="masthead">
+        <img src="{{ site.baseurl }}/public/profile.jpg" alt="Jami Gibbs">
+      </header>
+
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="large-6 large-offset-3 columns">
+
+      <div class="content-section">
+
+        <p>
+          Hello! I'm Dmitry Belyaev, Software Engineer. You would probably know me from my
+          <a href="https://blog.ddbelyaev.dev">blog</a>,
+          courses, or we've met in person.
+        </p>
+
+      </div>
+
+      <!-- <main>
+        <h2>Latest Work</h2>
+        {% for post in site.posts %}
+          <div class="project-post">
+            <h3><a href="{{ post.site }}">{{ post.title }}</a></h3>
+
+            {{ post.content }}
+
+            <ul>
+              <li><a href="{{ post.git }}"><i class="fa fa-github"></i></a></li>
+              {% if post.site %}
+              <li><a href="{{ post.site }}"><i class="fa fa-link"></i></a></li>
+              {% endif %}
+            </ul>
+
+            <hr />
+          </div>
+        {% endfor %}
+      </main> -->
+
+      <footer>
+        <h2>About me</h2>
+
+        <p>
+          I am 28 y/o Software Engineer, currently working at Russia's Top IT company. My tech stack
+          includes Golang, Python, Bash, JavaScript and some Java. Apart from programming languages,
+          I am proficient with Linux, Nginx, ELK, Docker, and Kubernetes (currently preparing for
+          certification). Oh, and of course, I use Vim (Neovim).
+        </p>
+
+        <p class="copyright">
+          <!-- &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. -->
+          This site is a Jekyll template Jami Gibbs developed and it's licensed MIT. You're welcome to
+          <a href="https://github.com/jamigibbs/portfolio">use it too</a>!
+        </p>
+      </footer>
+
+    </div>
+
+    <div class="large-2 large-offset-1 columns social">
+      <ul>
+        <li>
+          <a href="https://github.com/{{ site.github }}">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/{{ site.twitter }}">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/{{ site.twitter }}">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  {% if site.google_analytics %}
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '{{ site.google_analytics }}', 'auto');
+    ga('send', 'pageview');
+  </script> {% endif %}
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+# Permalinks
+permalink:           pretty
+
+# Setup
+title:               Dmitry Belyaev
+tagline:             Software Engineer 
+url:                 http://ddbelyaev.github.io
+paginate:            1
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Dmitry Belyaev
+  url:               https://twitter.com/ddbelyaev
+  email:             ddbelyaev@gmail.com
+
+# Custom vars
+version:             2.0.1
+github:
+  repo:              https://github.com/ddbelyaev/ddbelyaev.github.io
+google_analytics:    0
+twitter:             ddbelyaev
+github:              ddbelyaev
+dribbble:            ddbelyaev
+
+# Gems
+plugins:
+  # - jekyll-paginate
+  # - jekyll-gist
